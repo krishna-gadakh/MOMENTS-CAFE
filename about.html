@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="secc6">
+        <section id="breakfast-section" style="text-align: center; margin-top: 50px;">
+            <h2 style="color: brown; font-size: 30px; margin-bottom: 20px;">Breakfast</h2>
+
+            <!-- Clickable Element -->
+            <img id="breakfast-icon" src="iiii.jpeg" alt="Breakfast Icon"
+                style="width: 100px; height: 100px; cursor: pointer; border-radius: 50%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); margin-bottom: 20px;">
+            <h4 id="breakfast-text" style="cursor: pointer;">Click here to view Breakfast Options</h4>
+
+            <!-- Hidden Images Container -->
+            <div id="breakfast-images" style="display: none; margin-top: 20px;">
+                <img src="bugr.webp" alt="Breakfast Item 1"
+                    style="width: 200px; height: 150px; margin: 10px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                <img src="idlllieee.jpeg" alt="Breakfast Item 2"
+                    style="width: 200px; height: 150px; margin: 10px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                <img src="passsta.jpeg" alt="Breakfast Item 3"
+                    style="width: 200px; height: 150px; margin: 10px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                <img src="nood.webp" alt="Breakfast Item 4"
+                    style="width: 200px; height: 150px; margin: 10px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+            </div>
+        </section>
+        <script>
+            // Select the clickable elements and the images container
+            const breakfastIcon = document.getElementById("breakfast-icon");
+            const breakfastText = document.getElementById("breakfast-text");
+            const breakfastImages = document.getElementById("breakfast-images");
+
+            // Function to toggle visibility of breakfast images
+            function toggleBreakfastImages() {
+                if (breakfastImages.style.display === "none" || breakfastImages.style.display === "") {
+                    breakfastImages.style.display = "flex"; // Show images
+                    breakfastImages.style.justifyContent = "center";
+                    breakfastImages.style.gap = "20px";
+                    breakfastText.innerText = "Click here to hide Breakfast Options";
+                } else {
+                    breakfastImages.style.display = "none"; // Hide images
+                    breakfastText.innerText = "Click here to view Breakfast Options";
+                }
+            }
+
+            // Add event listeners to the icon and text
+            breakfastIcon.addEventListener("click", toggleBreakfastImages);
+            breakfastText.addEventListener("click", toggleBreakfastImages);
+        </script>
+        <section id="lunch-section" style="text-align: center; margin-top: 50px;">
+            <h2 style="color: brown; font-size: 30px; margin-bottom: 20px;">Lunch</h2>
+
+            <!-- Lunch Clickable Element -->
+            <img id="lunch-icon" src="iiii.jpeg" alt="Lunch Icon"
+                style="width: 100px; height: 100px; cursor: pointer; border-radius: 50%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); margin-bottom: 20px;">
+            <h4 id="lunch-text" style="cursor: pointer;">Click here to view Lunch Options</h4>
+
+            <!-- Hidden Lunch Images Container -->
+            <div id="lunch-images" style="display: none; margin-top: 20px;">
+                <img src="lunch_mutton.jpeg" alt="Lunch Item 1"
+                    style="width: 200px; height: 150px; margin: 10px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                <img src="chiken_fry.jpeg" alt="Lunch Item 2"
+                    style="width: 200px; height: 150px; margin: 10px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                <img src="grlic.jpeg" alt="Lunch Item 3"
+                    style="width: 200px; height: 150px; margin: 10px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+
+                <img src="chiken_fry.jpeg" alt="Lunch Item 4"
+                    style="width: 200px; height: 150px; margin: 10px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+
+                <script>
+                    const lunchIcon = document.getElementById("lunch-icon");
+                    const lunchText = document.getElementById("lunch-text");
+                    const lunchImages = document.getElementById("lunch-images");
+                    function toggleLunchImages() {
+                        if (lunchImages.style.display === "none" || lunchImages.style.display === "") {
+                            lunchImages.style.display = "flex"; // Show images
+                            lunchImages.style.justifyContent = "center";
+                            lunchImages.style.gap = "20px";
+                            lunchText.innerText = "Click here to hide Lunch Options";
+                        } else {
+                            lunchImages.style.display = "none"; // Hide images
+                            lunchText.innerText = "Click here to view Lunch Options";
+                        }
+                    }
+                    lunchIcon.addEventListener("click", toggleLunchImages);
+                    lunchText.addEventListener("click", toggleLunchImages);
+
+                </script>
+        </section>
+        <section id="dinner-section" style="text-align: center; margin-top: 50px;">
+            <h2 style="color: brown; font-size: 30px; margin-bottom: 20px;">Dinner</h2>
+
+            <!-- Dinner Clickable Element -->
+            <img id="dinner-icon" src="iii.jpeg" alt="Dinner Icon"
+                style="width: 100px; height: 100px; cursor: pointer; border-radius: 50%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); margin-bottom: 20px;">
+            <h4 id="dinner-text" style="cursor: pointer;">Click here to view Dinner Options</h4>
+
+            <!-- Hidden Dinner Images Container -->
+            <div id="dinner-images" style="display: none; margin-top: 20px;">
+                <img src="pasta.jpg" alt="Dinner Item 1"
+                    style="width: 150px; height: 150px; margin: 10px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                <img src="maggii.jpg" alt="Dinner Item 2"
+                    style="width: 150px; height: 150px; margin: 10px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                <img src="chiken_fry.jpeg" alt="Dinner Item 3"
+                    style="width: 150px; height: 150px; margin: 10px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                <img src="maggii.jpg" alt="Dinner Item 4"
+                    style="width: 150px; height: 150px; margin: 10px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+            </div>
+        </section>
+
+        <script>
+            // Select the clickable elements and the images container for Dinner
+            const dinnerIcon = document.getElementById("dinner-icon");
+            const dinnerText = document.getElementById("dinner-text");
+            const dinnerImages = document.getElementById("dinner-images");
+
+            // Function to toggle visibility of dinner images
+            function toggleDinnerImages() {
+                if (dinnerImages.style.display === "none" || dinnerImages.style.display === "") {
+                    dinnerImages.style.display = "flex"; // Show images
+                    dinnerImages.style.justifyContent = "center";
+                    dinnerImages.style.gap = "20px";
+                    dinnerText.innerText = "Click here to hide Dinner Options";
+                } else {
+                    dinnerImages.style.display = "none"; // Hide images
+                    dinnerText.innerText = "Click here to view Dinner Options";
+                }
+            }
+
+            // Add event listeners to the icon and text
+            dinnerIcon.addEventListener("click", toggleDinnerImages);
+            dinnerText.addEventListener("click", toggleDinnerImages);
+        </script>
+    </div>
+    </section>
+    </div>
+    <footer class="footer" style="margin-top: 20px;">
+        <div class="footer-content">
+            <h2><b>Moments Special</b></h2>
+            <p>Since 1990</p>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                    <img src="fb.jpeg" alt="Instagram">
+                </a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <img src="instt.jpeg" alt="Instagram">
+                </a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                    <img src="tw.jpeg" alt="Twitter">
+                </a>
+            </div>
+            <p>&copy; 2025 Moments Special Cafe. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
+</body>
+</html>
